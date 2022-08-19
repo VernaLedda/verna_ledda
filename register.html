@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Verna Ledda 300349938 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Verna Ledda</title>
+<link href="style.css" rel="stylesheet">
+
+  <script>
+    
+     window.onload = function() {
+   document.forms[0].onsubmit = function() {
+      if (this.checkValidity()) alert("Thank you for registering, you can now post your comments as a member!");
+       window.location.href = "index.html"
+      return false;
+   };
+};
+     
+    </script>  
+</head>
+<body>
+    <table id="sticky" >
+<tr>
+<td>
+    
+   <img src="v2.jpg" id="vern_picsticky"  style="float:left;" alt="Profile Picture" > 
+     <div class="left_verns">Verna Ledda | Register</div>
+<div class="sticky" style="float:right;">
+ <nav> <ul class="mainmenu">
+       <li style="list-style-type:none;"><a href="index.html" class="submenuTitle">Home | &nbsp;</a>
+               <ul class="submenu">
+                  <li><a href="projects.html" >&#9654; Projects</a></li>
+                  <li><a href="education.html" >&#9654; Education</a></li>
+                  <li><a href="food.html" >&#9654; Food</a></li>
+                  <li><a href="travel.html" >&#9654; Travel</a></li>
+                  <li><a href="vlog.html" > &#9654; Vlog</a></li>
+                   <li><a href="home.html" > &#9654; Home & Family</a></li>
+               </ul>
+            </li>
+     <li style="list-style-type:none;"><a href="register.html" class="submenuTitle">Register &nbsp;&nbsp;</a></li>
+     </ul>
+    </nav>
+</div>
+</td>
+</tr>
+</table>
+    
+<table id="food"   >
+<tr>
+<td >
+<div class="food_pae"  style="background-color: azure; margin:15px; border-radius:8px; ">
+    <p class="page_title">You can register and give your feedback to my content. Let's connect!  <br/>
+    <div class="feedback" style ="display: flex;
+                      justify-content: center;
+                      align-items: center;">Please type your details in the form.</div>
+    
+     <form action = "#" class="member_form" name = "myForm_reg" onsubmit = "return(validate());">
+         <div style ="display: flex;
+                      justify-content: center;
+                      align-items: center;">
+         <table class ="survey" style="width:50%" >
+            <tr style="margin-top:50px">
+                <td align = "right"> <br > <label for="name">Name* </label></td>
+               <td><br ><input type = "text" id ="name" placeholder="First Name Last Name" required/></td>
+            </tr>
+              <tr>
+                <td align = "right">  <label for="bday">Birthday </label></td>
+               <td><input type = "date" id ="bday" /></td>
+            </tr>
+            <tr>
+                <td align = "right"> <label for="street">Street Address</label></td>
+               <td><input type = "text" id ="street" /></td>
+            </tr>
+             <tr>
+                <td align = "right"> <label for="city">City</label></td>
+               <td><input type = "text" id ="city" /></td>
+            </tr>
+            <tr>
+                <td align = "right"> <label for="province">Province</label></td>
+               <td> <input name="prov" id="province" type="text" list="provinces" />
+                <datalist id="provinces">
+                <option>Alberta</option>
+                <option>British Columbia</option>
+                <option>Manitoba</option>
+                <option>New Brunswick</option>
+                <option>Newfoundland and Labrador</option>
+                <option>Nova Scotia</option>
+                <option>Ontario</option>
+                <option>Prince Edward Island</option>
+                <option>Quebec</option>
+                <option>Saskatchewan</option>
+                </datalist></td>
+            </tr>
+             <tr>
+                <td align = "right"> <label for="zip">Postal Code</label></td>
+               <td><input name="Zip" id="zip" type="text" placeholder="eg. V3TOM4" pattern="[A-Z0-9]{6}" /></td>
+            </tr>
+            <tr>
+                <td align = "right"><label for="e">e-Mail*</label></td>
+               <td><input type = "email" id='e' name = "EMail" required /></td>
+             </tr>
+            <tr>
+                <td align = "right"><label for="phone">Phone</label></td>
+               <td><input name="Phone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" /></td>
+             </tr>
+            <tr>
+            
+               <td colspan="2"> 
+                   <input type = "submit" value = "Submit"  style="margin:5px; margin-left:33%;" />
+                 <input type="reset" value="Cancel" />  <br > <br ></td>
+            </tr>
+              
+         </table>
+         </div>
+      </form>      
+<br> <br/>
+ </div>
+    </td>
+    </tr>
+    </table> 
+    <br> <br>
+<footer id="footer" style="position:fixed;" >
+        <p style="text-align: center; font-size:.7em; color:dimgray; margin:0;">
+          Verna Ledda | email: <a href="mailto:leddavernav@gmail.com" style="color:mediumblue">  leddavernav@gmail.com</a> </p>
+</footer>
+    
+
+</body>
+  
+</html>
